@@ -12,6 +12,9 @@
     <div *ngIf="!empty" class="offset-3 card shadow rounded mt-3 col-6 p-4">
       <img  src="{{response}}"   alt="">
     </div>
+    <div *ngIf="empty && error" class="offset-4 mt-3 col-4 p-4">
+      <h2 class="text-danger">{{error}}</h2>
+    </div>
   </div>
     
   </div>

@@ -9,6 +9,7 @@ import { VideogenComponent } from './videogen/videogen.component';
 import { Img2imgComponent } from './img2img/img2img.component';
 import { QAComponent } from './qa/qa.component';
 import { AiupscalerComponent } from './aiupscaler/aiupscaler.component';
+import { ImageclassifierComponent } from './imageclassifier/imageclassifier.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AiupscalerComponent } from './aiupscaler/aiupscaler.component';
     Img2imgComponent,
     QAComponent,
     AiupscalerComponent,
+    ImageclassifierComponent,
   ],
   imports: [
     BrowserModule,

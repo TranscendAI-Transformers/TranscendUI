@@ -20,6 +20,9 @@ export class AppService {
   upscaleImage(data:any){
     return this.http.post('http://localhost:5000/aiupscaler',data,{responseType:'text'})
   }
+  classifyImage(data:any){
+    return this.http.post('http://localhost:5000/classify',data,{responseType:'text'})
+  }
   askBot(data:any){
     return this.http.post('http://localhost:5000/ask_bot',data)
   }

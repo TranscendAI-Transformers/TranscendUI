@@ -4,36 +4,37 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='/'>Transcribe & Summarize</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='imagegen'>Image Generation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='videogen'>Video Generation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='img2img'>Image to Image Generation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='aiupscaler'>AI Upscaler</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" routerLink='qa'>QA Bot</a>
-      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+        <a class="nav-link dropdown-toggle active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Text AI
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" routerLink='/'>Transcribe & Summarize</a>
+          <a class="dropdown-item" routerLink='qa'>QA Bot</a>
         </div>
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Image AI
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='imagegen'>Image Generation</a>
+          <a class="dropdown-item" routerLink='img2img'>Image to Image Generation</a>
+          <a class="dropdown-item" routerLink='aiupscaler'>AI Upscaler</a>
+         
+        </div>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Video AI
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='videogen'>Video Generation</a>
+        </div>
+      </li>
+     
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>

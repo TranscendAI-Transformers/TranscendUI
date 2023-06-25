@@ -1,6 +1,7 @@
 <div class="container mt-5" *ngIf="!loading">
     <div class="row">
       <form class="form col-4 card p-3 offset-4" *ngIf="empty">
+        <h2>Transcribe & Summarize</h2>
         <input placeholder="place youtube url" class="form-control" type="text" name="" #url id="">
        
         <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value)">Transcribe & Summarize</button>

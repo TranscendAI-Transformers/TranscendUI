@@ -23,6 +23,9 @@ export class AppService {
   classifyImage(data:any){
     return this.http.post('http://localhost:5000/classify',data,{responseType:'text'})
   }
+  yolo(data:any){
+    return this.http.post('http://localhost:5000/yolo',data)
+  }
   askBot(data:any){
     return this.http.post('http://localhost:5000/ask_bot',data)
   }

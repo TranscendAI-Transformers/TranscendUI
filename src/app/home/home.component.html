@@ -7,20 +7,24 @@
         <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value)">Transcribe & Summarize</button>
       </form>
     </div>
-    <div *ngIf="!empty">
-      <h2 (click)="toggleSummary()" class="text-primary">Summary</h2>
-    <div class="row" *ngIf="showSummary">
+    <div *ngIf="!empty" >
+      <div class="card p-4 rounded shadow expand" >
+        <h2 class="text-primary" data-toggle="collapse" href="#summary" role="button" aria-expanded="false" aria-controls="collapseExample">Summary</h2>
+    <div class="row collapse"  id="summary">
       <ul *ngFor="let sum of response.summary">
         <li>{{sum}}</li>
       </ul>
   
     </div>
-    <h2 (click)="toggleTranscription()" class="text-primary">Transcription</h2>
-    <div class="row" *ngIf="showTranscription">
+      </div>
+    <div class="card p-4 rounded shadow mt-3">
+      <h2  class="text-primary" data-toggle="collapse" href="#transcript" role="button" aria-expanded="false" aria-controls="collapseExample">Transcription</h2>
+    <div class="row collapse"  id="transcript">
       <div >
         {{response.text}}
       </div>
   
+    </div>
     </div>
   
     </div>

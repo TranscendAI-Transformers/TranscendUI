@@ -10,7 +10,6 @@ export class HomeComponent {
   empty=true
   title = 'TranscendUI';
   response:any={}
-  showSummary=false;
   showTranscription=false;
   showImages=false;
   loading:boolean=false;
@@ -31,9 +30,6 @@ export class HomeComponent {
   }
   toggleTranscription(){
     this.showTranscription=!this.showTranscription;
-  }
-  toggleSummary(){
-    this.showSummary=!this.showSummary;
   }
   toggleImages(){
     this.showImages=!this.showImages;

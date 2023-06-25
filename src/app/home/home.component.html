@@ -28,6 +28,9 @@
     </div>
   
     </div>
+    <div *ngIf="empty && error">
+      <h2 class="text-danger text-justify offset-4 mt-5">{{error}}</h2>
+    </div>
     
   </div>
   

@@ -6,8 +6,12 @@
         <input placeholder="type image url" class="form-control" value="{{prevUrl}}" type="text" name="" #url id="">
         <button  type="button" class="btn btn-primary mt-2" (click)="generateImage(text.value,url.value)">Generate</button>
       </form>
-      <img *ngIf="!empty" src="{{response}}" style="width: 66rem;" class="offset-3" alt="">
    
+  </div>
+  <div class="row">
+    <div *ngIf="!empty" class="offset-3 card shadow rounded mt-3 col-6 p-4">
+      <img  src="{{response}}"   alt="">
+    </div>
   </div>
     
   </div>

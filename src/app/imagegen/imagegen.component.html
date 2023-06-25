@@ -6,10 +6,13 @@
         <h2>Image Generation</h2>
         <input placeholder="type text" class="form-control" value="{{prevValue}}" type="text" name="" #text id="">
         <button  type="button" class="btn btn-primary mt-2" (click)="generateImage(text.value)">Generate</button>
-      </form>
-      <img *ngIf="!empty" src="{{response}}" style="width: 46rem;" class="offset-3" alt="">
-   
-  </div>
+      </form> 
+    </div>
+    <div class="row">
+      <div *ngIf="!empty" class="offset-3 card shadow rounded mt-3 col-6 p-4">
+        <img  src="{{response}}"   alt="">
+      </div>
+    </div>
     
   </div>
 <div class="d-flex justify-content-center mt-5"  *ngIf="loading">

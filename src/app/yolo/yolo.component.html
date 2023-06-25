@@ -10,9 +10,9 @@
   <div class="row">
     <div *ngIf="!empty" class="offset-3 card shadow rounded mt-3 col-6 p-4">
         <ul>
-            <li *ngFor="let resp of response">{{resp}}</li>
+            <li *ngFor="let resp of response.text">{{resp}}</li>
         </ul>
-      
+        <img src="{{response.image}}" alt="">
     </div>
     <div *ngIf="empty && error" class="offset-4 mt-3 col-4 p-4">
       <h2 class="text-danger">{{error}}</h2>

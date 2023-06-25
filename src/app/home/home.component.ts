@@ -10,8 +10,6 @@ export class HomeComponent {
   empty=true
   title = 'TranscendUI';
   response:any={}
-  showTranscription=false;
-  showImages=false;
   loading:boolean=false;
   constructor(private service:AppService){
 
@@ -24,14 +22,9 @@ export class HomeComponent {
     this.service.runPipeline({'url':url}).subscribe(res=>{
       this.loading=false;
       this.response=res;
-      console.log(res)
       this.empty=false
     })
   }
-  toggleTranscription(){
-    this.showTranscription=!this.showTranscription;
-  }
-  toggleImages(){
-    this.showImages=!this.showImages;
-  }
+
+
 }

@@ -17,11 +17,12 @@ export class HomeComponent {
   }
 
 
-  imageLessPipeLine(url:String){
+  imageLessPipeLine(url:String,tOnly:boolean){
+    console.log(tOnly)
     this.response={}
     this.loading=true;
     this.error=null;
-    this.service.runPipeline({'url':url}).subscribe(res=>{
+    this.service.runPipeline({'url':url,'tOnly':tOnly}).subscribe(res=>{
       this.loading=false;
       this.response=res;
       this.empty=false

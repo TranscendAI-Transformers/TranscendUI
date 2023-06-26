@@ -3,12 +3,15 @@
       <form class="form col-4 card p-3 offset-4" *ngIf="empty">
         <h2>Transcribe & Summarize</h2>
         <input placeholder="place youtube url" class="form-control" type="text" name="" #url id="">
-       
-        <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value)">Transcribe & Summarize</button>
+          <div>
+            <input type="checkbox" class="mt-2 ml-1" #tOnly value="true" name="" id="">
+            <label for="">Transcript only</label>
+          </div>
+        <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value,tOnly.checked)">Transcribe & Summarize</button>
       </form>
     </div>
     <div *ngIf="!empty" >
-      <div class="card p-4 rounded shadow expand" >
+      <div class="card p-4 rounded shadow expand" *ngIf="response.summary">
         <h2 class="text-primary" data-toggle="collapse" href="#summary" role="button" aria-expanded="false" aria-controls="collapseExample">Summary</h2>
     <div class="row collapse"  id="summary">
       <ul *ngFor="let sum of response.summary">

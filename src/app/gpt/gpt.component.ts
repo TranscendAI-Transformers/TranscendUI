@@ -9,15 +9,15 @@ import { AppService } from '../app.service';
 export class GptComponent {
   loading:boolean=false;
   empty=true;
-  response:any={}
+  response:any=[]
   prevText:String=''
   constructor(private service:AppService){
 
   }
-  gpt(text:String){
+  gpt(text:String, multiple:boolean){
     this.loading=true;
     this.prevText=text
-    this.service.gpt({'text':text}).subscribe(
+    this.service.gpt({'text':text,'multiple':multiple}).subscribe(
       res=>{
         this.empty=false;
         this.loading=false;

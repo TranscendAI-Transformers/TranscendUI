@@ -4,13 +4,23 @@
         <h2>GPT Completion</h2>
         <textarea placeholder="type context" class="form-control" value="{{prevText}}" type="text" name="" #text id="">
           </textarea>
-        <button  type="button" class="btn btn-primary mt-2" (click)="gpt(text.value)">Generate</button>
+          <div>
+            <input type="checkbox" #multiple name="" id="">
+          <label for="" >Produce Multiple</label>
+          </div>
+        <button  type="button" class="btn btn-primary mt-2" (click)="gpt(text.value,multiple.checked)">Generate</button>
       </form>
       
    
   </div>
   <div class="row mt-3">
-    <div *ngIf="!empty" class="offset-3 col-6 acrd rounded shadow p-2">{{response.generated_text}}</div>
+    <div *ngIf="!empty"  class="offset-2 col-8 acrd rounded shadow p-2">
+      <ol>
+        <li *ngFor="let resp of response" class="mt-2">
+          {{resp.generated_text}}
+        </li>
+      </ol>
+      </div>
   </div>
   </div>
 <div class="d-flex justify-content-center mt-5"  *ngIf="loading">

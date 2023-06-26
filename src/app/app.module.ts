@@ -11,6 +11,7 @@ import { QAComponent } from './qa/qa.component';
 import { AiupscalerComponent } from './aiupscaler/aiupscaler.component';
 import { ImageclassifierComponent } from './imageclassifier/imageclassifier.component';
 import { YoloComponent } from './yolo/yolo.component';
+import { GptComponent } from './gpt/gpt.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { YoloComponent } from './yolo/yolo.component';
     AiupscalerComponent,
     ImageclassifierComponent,
     YoloComponent,
+    GptComponent,
   ],
   imports: [
     BrowserModule,

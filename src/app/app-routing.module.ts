@@ -8,6 +8,7 @@ import { QAComponent } from './qa/qa.component';
 import { AiupscalerComponent } from './aiupscaler/aiupscaler.component';
 import { ImageclassifierComponent } from './imageclassifier/imageclassifier.component';
 import { YoloComponent } from './yolo/yolo.component';
+import { GptComponent } from './gpt/gpt.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent,pathMatch:'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'classify',component:ImageclassifierComponent,pathMatch:'full'},
   {path:'yolo',component:YoloComponent,pathMatch:'full'},
   {path:'qa',component:QAComponent,pathMatch:'full'},
+  {path:'gpt',component:GptComponent,pathMatch:'full'},
   {path:'videogen',component:VideogenComponent,pathMatch:'full'}
 ];
 

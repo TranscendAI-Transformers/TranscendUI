@@ -29,6 +29,9 @@ export class AppService {
   askBot(data:any){
     return this.http.post('http://localhost:5000/ask_bot',data)
   }
+  gpt(data:any){
+    return this.http.post('http://localhost:5000/text_generation',data)
+  }
   generateVideo(data:any){
     return this.http.post('http://localhost:5000/videogen',data,{responseType:'text'})
   }

@@ -26,6 +26,7 @@ export class YoloComponent {
         this.empty=false;
         this.loading=false;
         this.response=res;
+        console.log(this.response)
       },err=>{
         this.loading=false
         this.error=err.error

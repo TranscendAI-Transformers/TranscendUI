@@ -7,7 +7,7 @@
             <input type="checkbox" class="mt-2 ml-1" #tOnly value="true" name="" id="">
             <label for="">Transcript only</label>
           </div>
-        <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value,tOnly.checked)">Transcribe & Summarize</button>
+        <button  type="button" class="btn btn-primary mt-2" (click)="imageLessPipeLine(url.value,tOnly.checked)">Generate</button>
       </form>
     </div>
     <div *ngIf="!empty" >

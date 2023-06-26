@@ -1,0 +1,7 @@
+<div class="row mt-3">
+
+    <div *ngFor="let module of modules" class="col-3 offset-1 card shadow p-3 mt-4">
+      <h3 [routerLink]="module.path">{{module.text}}</h3>
+    </div>
+  
+  </div>

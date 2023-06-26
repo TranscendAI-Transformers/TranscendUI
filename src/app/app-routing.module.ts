@@ -9,9 +9,10 @@ import { AiupscalerComponent } from './aiupscaler/aiupscaler.component';
 import { ImageclassifierComponent } from './imageclassifier/imageclassifier.component';
 import { YoloComponent } from './yolo/yolo.component';
 import { GptComponent } from './gpt/gpt.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent,pathMatch:'full'},
+  {path:'transcribe',component:HomeComponent,pathMatch:'full'},
   {path:'imagegen',component:ImagegenComponent,pathMatch:'full'},
   {path:'img2img',component:Img2imgComponent,pathMatch:'full'},
   {path:'aiupscaler',component:AiupscalerComponent,pathMatch:'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'yolo',component:YoloComponent,pathMatch:'full'},
   {path:'qa',component:QAComponent,pathMatch:'full'},
   {path:'gpt',component:GptComponent,pathMatch:'full'},
-  {path:'videogen',component:VideogenComponent,pathMatch:'full'}
+  {path:'videogen',component:VideogenComponent,pathMatch:'full'},
+  {path:'',component:WelcomeComponent,pathMatch:'full'}
 ];
 
 @NgModule({

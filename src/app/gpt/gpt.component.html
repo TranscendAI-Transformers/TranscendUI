@@ -1,7 +1,7 @@
 <div class="container mt-5" *ngIf="!loading">
     <div class="row">
       <form class="form col-4 card p-3 offset-4" >
-        <h2>GPT Bot</h2>
+        <h2>GPT Completion</h2>
         <input placeholder="type context" class="form-control" value="{{prevText}}" type="text" name="" #text id="">
         <button  type="button" class="btn btn-primary mt-2" (click)="gpt(text.value)">Generate</button>
       </form>

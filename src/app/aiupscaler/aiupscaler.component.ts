@@ -11,18 +11,16 @@ export class AiupscalerComponent {
   empty=true;
   response:String|null=null;
   prevUrl:String=''
-  prevText:String=''
   error:String|null=null
   constructor(private service:AppService){
 
   }
-  upscaleImage(text:String,url:String){
+  upscaleImage(url:String){
     this.loading=true;
-    this.prevText=text;
     this.prevUrl=url
     this.response=null;
     this.error=null
-    this.service.upscaleImage({'text':text,'url':url}).subscribe(
+    this.service.upscaleImage({'url':url}).subscribe(
       res=>{
         this.empty=false;
         this.loading=false;

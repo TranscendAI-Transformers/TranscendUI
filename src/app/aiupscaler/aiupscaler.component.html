@@ -2,9 +2,8 @@
     <div class="row">
       <form class="form col-4 card p-3 offset-4" >
         <h2>AI Upscaler</h2>
-        <input placeholder="type text" class="form-control" value="{{prevText}}" type="text" name="" #text id="">
         <input placeholder="type image url" class="form-control mt-2" value="{{prevUrl}}" type="text" name="" #url id="">
-        <button  type="button" class="btn btn-primary mt-2" (click)="upscaleImage(text.value,url.value)">Generate</button>
+        <button  type="button" class="btn btn-primary mt-2" (click)="upscaleImage(url.value)">Generate</button>
       </form>
    
   </div>

@@ -3,7 +3,8 @@
       <form class="form col-4 card p-3 offset-4" >
         <h2>QA Bot</h2>
         <input placeholder="type qyestion" class="form-control" value="{{prevQuestion}}" type="text" name="" #question id="">
-        <input placeholder="type context" class="form-control" value="{{prevContext}}" type="text" name="" #context id="">
+        <textarea placeholder="type context" class="form-control mt-2" value="{{prevContext}}" type="text" name="" #context id="">
+        </textarea>
         <button  type="button" class="btn btn-primary mt-2" (click)="askBot(question.value,context.value)">Generate</button>
       </form>
       <div *ngIf="!empty" class="offset-3">{{response.answer}}</div>

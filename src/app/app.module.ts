@@ -13,6 +13,7 @@ import { ImageclassifierComponent } from './imageclassifier/imageclassifier.comp
 import { YoloComponent } from './yolo/yolo.component';
 import { GptComponent } from './gpt/gpt.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     YoloComponent,
     GptComponent,
     WelcomeComponent,
+    SummaryComponent,
   ],
   imports: [
     BrowserModule,

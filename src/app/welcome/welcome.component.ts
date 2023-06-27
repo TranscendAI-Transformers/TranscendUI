@@ -16,6 +16,7 @@ export class WelcomeComponent {
   {'text':'AI Upscaler',path:'aiupscaler','description':'given a image, image gen can upscale the image'},
   {'text':'Image Classifier',path:'classify','description':'given a image, will classify the largest object in the image'},
   {'text':'YOLO Classifier',path:'yolo','description':'given a image, yolo can identify all object, animal, people in the image'},
-  {'text':'Video Generation',path:'videogen','description':'given a description, video gen can generate an video'}
+  {'text':'Video Generation',path:'videogen','description':'given a description, video gen can generate an video'},
+  {'path':'summary','text':'Summary','description':'Generate summary from any given context'}
 ];
 }

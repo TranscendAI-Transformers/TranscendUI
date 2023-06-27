@@ -32,6 +32,9 @@ export class AppService {
   gpt(data:any){
     return this.http.post('http://localhost:5000/text_generation',data)
   }
+  summary(data:any){
+    return this.http.post('http://localhost:5000/summary',data)
+  }
   generateVideo(data:any){
     return this.http.post('http://localhost:5000/videogen',data,{responseType:'text'})
   }

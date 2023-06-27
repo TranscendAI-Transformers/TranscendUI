@@ -5,8 +5,7 @@
         <input placeholder="type text" class="form-control" value="{{prevText}}" type="text" name="" #text id="">
         <button  type="button" class="btn btn-primary mt-2" (click)="generateVideo(text.value)">Generate</button>
       </form>
-      <video autoplay controls type="video/mp4" src="{{response}}"  *ngIf="!empty"  style="width: 46rem;" class="offset-3" alt="">
-        </video>
+      <div style="width:100%;height:0px;position:relative;padding-bottom:100.000%;"><iframe src="https://streamable.com/e/el2sim" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
        
    

@@ -14,6 +14,7 @@ import { YoloComponent } from './yolo/yolo.component';
 import { GptComponent } from './gpt/gpt.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SummaryComponent } from './summary/summary.component';
+import { ImagecaptionComponent } from './imagecaption/imagecaption.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SummaryComponent } from './summary/summary.component';
     GptComponent,
     WelcomeComponent,
     SummaryComponent,
+    ImagecaptionComponent,
   ],
   imports: [
     BrowserModule,

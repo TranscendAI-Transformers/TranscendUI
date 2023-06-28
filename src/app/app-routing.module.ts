@@ -11,6 +11,7 @@ import { YoloComponent } from './yolo/yolo.component';
 import { GptComponent } from './gpt/gpt.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SummaryComponent } from './summary/summary.component';
+import { ImagecaptionComponent } from './imagecaption/imagecaption.component';
 
 const routes: Routes = [
   {path:'transcribe',component:HomeComponent,pathMatch:'full'},
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path:'gpt',component:GptComponent,pathMatch:'full'},
   {path:'videogen',component:VideogenComponent,pathMatch:'full'},
   {path:'summary',component:SummaryComponent,pathMatch:'full'},
-  {path:'',component:WelcomeComponent,pathMatch:'full'}
+  {path:'image_caption',component:ImagecaptionComponent,pathMatch:'full'},
+  {path:'',component:WelcomeComponent,pathMatch:'full'},
+  
 ];
 
 @NgModule({

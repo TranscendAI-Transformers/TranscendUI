@@ -9,10 +9,7 @@
           Text AI
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink='transcribe'>Transcribe & Summarize</a>
-          <a class="dropdown-item" routerLink='qa'>QA Bot</a>
-          <a class="dropdown-item" routerLink='gpt'>GPT Completion</a>
-          <a class="dropdown-item" routerLink='summary'>Summary</a>
+          <a class="dropdown-item" *ngFor="let i of textServices" [routerLink]="i.path">{{i.text}}</a>
         </div>
       </li>
 
@@ -21,13 +18,8 @@
           Image AI
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink='imagegen'>Image Generation</a>
-          <a class="dropdown-item" routerLink='img2img'>Image to Image Generation</a>
-          <a class="dropdown-item" routerLink='aiupscaler'>AI Upscaler</a>
-          <a class="dropdown-item" routerLink='classify'>Image Classifier</a>
-          <a class="dropdown-item" routerLink='yolo'>YOLO Classifier</a>
-          <a class="dropdown-item" routerLink='image_caption'>Image Caption</a>
-          <a class="dropdown-item" routerLink='image_qa'>Image QA</a>
+        
+          <a class="dropdown-item" *ngFor="let i of imageServices" [routerLink]="i.path">{{i.text}}</a>
          
         </div>
       </li>
@@ -37,7 +29,7 @@
           Video AI
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink='videogen'>Video Generation</a>
+          <a class="dropdown-item" *ngFor="let i of videoServices" [routerLink]="i.path">{{i.text}}</a>
         </div>
       </li>
      

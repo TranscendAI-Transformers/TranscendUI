@@ -12,6 +12,7 @@ import { GptComponent } from './gpt/gpt.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SummaryComponent } from './summary/summary.component';
 import { ImagecaptionComponent } from './imagecaption/imagecaption.component';
+import { ImageQAComponent } from './image-qa/image-qa.component';
 
 const routes: Routes = [
   {path:'transcribe',component:HomeComponent,pathMatch:'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path:'summary',component:SummaryComponent,pathMatch:'full'},
   {path:'image_caption',component:ImagecaptionComponent,pathMatch:'full'},
   {path:'',component:WelcomeComponent,pathMatch:'full'},
+  {path:'image_qa',component:ImageQAComponent,pathMatch:'full'},
   
 ];
 

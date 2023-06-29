@@ -17,6 +17,9 @@ export class AppService {
   img2img(data:any){
     return this.http.post(this.base+'img2img',data,{responseType:'text'})
   }
+  imageQA(data:any){
+    return this.http.post(this.base+'image_qa',data,{responseType:'text'})
+  }
   upscaleImage(data:any){
     return this.http.post(this.base+'aiupscaler',data,{responseType:'text'})
   }

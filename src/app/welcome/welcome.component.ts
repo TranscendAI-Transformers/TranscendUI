@@ -19,5 +19,6 @@ export class WelcomeComponent {
   {'text':'Video Generation',path:'videogen','description':'given a description, video gen can generate an video'},
   {'path':'summary','text':'Summary','description':'Generate summary from any given context'},
   {'path':'image_caption','text':'Image Caption','description':'Generate Caption/description from image'},
+  {'path':'image_qa','text':'Image QA','description':'Generate Answers from context available within the image.'},
 ];
 }

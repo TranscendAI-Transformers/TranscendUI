@@ -15,6 +15,7 @@ import { GptComponent } from './gpt/gpt.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SummaryComponent } from './summary/summary.component';
 import { ImagecaptionComponent } from './imagecaption/imagecaption.component';
+import { ImageQAComponent } from './image-qa/image-qa.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ImagecaptionComponent } from './imagecaption/imagecaption.component';
     WelcomeComponent,
     SummaryComponent,
     ImagecaptionComponent,
+    ImageQAComponent,
   ],
   imports: [
     BrowserModule,
